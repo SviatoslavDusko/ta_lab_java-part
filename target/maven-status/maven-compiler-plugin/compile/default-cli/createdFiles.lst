@@ -1,0 +1,16 @@
+com/epam/lab/oop_task1/goods_for_repair/wood_product/WoodProduct.class
+com/epam/lab/oop_task1/goods_for_repair/wood_product/wood_product_goods/Furniture.class
+com/epam/lab/oop_task1/goods_for_repair/electro/electrical_goods/Switch.class
+com/epam/lab/oop_task1/goods_for_repair/plumbing/plumbing_goods/Toilet.class
+com/epam/lab/oop_task1/goods_for_repair/wood_product/wood_product_goods/Floor.class
+com/epam/lab/oop_task1/goods_for_repair/paints_varnishes/paints_varnishes_goods/Paint.class
+com/epam/lab/oop_task1/goods_for_repair/electro/Electro.class
+com/epam/lab/oop_task1/goods_for_repair/electro/electrical_goods/Socket.class
+com/epam/lab/oop_task1/goods_for_repair/plumbing/plumbing_goods/Shower.class
+com/epam/lab/oop_task1/goods_for_repair/paints_varnishes/PaintsAndVarnishesProduct.class
+com/epam/lab/oop_task1/goods_for_repair/electro/electrical_goods/LightingFixtures.class
+com/epam/lab/oop_task1/goods_for_repair/electro/electrical_goods/Conductors.class
+com/epam/lab/oop_task1/goods_for_repair/wood_product/wood_product_goods/Door.class
+com/epam/lab/oop_task1/goods_for_repair/plumbing/plumbing_goods/Bath.class
+com/epam/lab/oop_task1/goods_for_repair/plumbing/plumbing_goods/Tile.class
+com/epam/lab/oop_task1/goods_for_repair/paints_varnishes/paints_varnishes_goods/Varnish.class
