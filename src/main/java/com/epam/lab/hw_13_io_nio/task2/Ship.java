@@ -1,23 +1,22 @@
-package com.epam.lab.hw_7_8_collection.generics.ship_with_droids;
+package com.epam.lab.hw_13_io_nio.task2;
 
-import com.epam.lab.hw_7_8_collection.generics.ship_with_droids.droid.Droid;
-
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Ship<T extends Droid> {
-    private List<T> droidList = new ArrayList<>();
+public class Ship implements Serializable {
+    private List<Droid> droidList = new ArrayList<>();
 
-    private List<T> getDroidList() {
+    private List<Droid> getDroidList() {
         return droidList;
     }
 
-    public void putDroid(T droid) {
+    public void putDroid(Droid droid) {
         this.droidList.add(droid);
     }
 
     public boolean getDroid(String nameDroid) {
-        for (T droid : getDroidList()) {
+        for (Droid droid : getDroidList()) {
             if (droid.getName().toLowerCase().equals(nameDroid.toLowerCase())) {
                 getDroidList().remove(droid);
                 return true;

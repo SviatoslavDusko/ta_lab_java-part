@@ -1,5 +1,9 @@
 package com.epam.lab.hw_7_8_collection.generics.ship_with_droids;
 
+import com.epam.lab.hw_7_8_collection.generics.ship_with_droids.droid.Droid;
+import com.epam.lab.hw_7_8_collection.generics.ship_with_droids.droid.DroidType1;
+import com.epam.lab.hw_7_8_collection.generics.ship_with_droids.droid.DroidType2;
+
 public class Main {
     public static void main(String[] args) {
         Ship<Droid> ship = new Ship<>();

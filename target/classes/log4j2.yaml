@@ -5,7 +5,7 @@ Configuration:
     property:
       name: log-path
       value: logs
-#-------------------------------------------------------------------------------
+  #-------------------------------------------------------------------------------
   appenders:
     Console:
       name: Console_Appender
@@ -43,24 +43,24 @@ Configuration:
           modulate: true
         SizeBasedTriggeringPolicy:
           size: 1 MB
-#    SMTP:
-#  xxxxxxxxxxxxxxxxxxx
-#    SMS:
-#-------------------------------------------------------------------------------
+  #    SMTP:
+  #  xxxxxxxxxxxxxxxxxxx
+  #    SMS:
+  #-------------------------------------------------------------------------------
   Loggers:
     Root:
       level: info
       AppenderRef:
-      - ref: Console_Appender
-      - ref: File_Appender
-      - ref: Rolling_File_Appender
+        - ref: Console_Appender
+        - ref: File_Appender
+        - ref: Rolling_File_Appender
     Logger:
-    - name: com.epam.lab.logger.Main
-      level: all
-      AppenderRef:
-      - ref: Console_Appender
+      - name: com.epam.lab.logger.Main
         level: all
-      - ref: File_Appender
-        level: all
-      - ref: Rolling_File_Appender
-        level: all
+        AppenderRef:
+          - ref: Console_Appender
+            level: all
+          - ref: File_Appender
+            level: all
+          - ref: Rolling_File_Appender
+            level: all

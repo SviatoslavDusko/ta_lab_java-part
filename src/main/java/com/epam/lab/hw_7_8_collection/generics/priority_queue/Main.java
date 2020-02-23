@@ -1,6 +1,6 @@
 package com.epam.lab.hw_7_8_collection.generics.priority_queue;
 
-import com.epam.lab.hw_7_8_collection.generics.ship_with_droids.Droid;
+import com.epam.lab.hw_7_8_collection.generics.ship_with_droids.droid.Droid;
 
 public class Main {
     public static void main(String[] args) {
