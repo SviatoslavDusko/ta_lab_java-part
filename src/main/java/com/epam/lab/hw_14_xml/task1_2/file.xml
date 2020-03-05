@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tariffs xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="file.xsd">
+    <name>Internet plus</name>
+    <operator_name>Kyivstar</operator_name>
+    <payroll>1000</payroll>
+    <call_prices>
+        <on_network>10</on_network>
+        <out_of_network>50</out_of_network>
+        <stationary>1000</stationary>
+    </call_prices>
+    <sms_prices>400</sms_prices>
+    <parameters>
+        <favorite_number>380985658553</favorite_number>
+        <tariffing>60</tariffing>
+        <connection_cost>9000</connection_cost>
+    </parameters>
+</tariffs>

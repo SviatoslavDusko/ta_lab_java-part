@@ -24,3 +24,19 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+/logs/
+.idea/encodings.xml
+src/test/
+target/classes/com/epam/lab/hw_10_lambda/task4/
+target/classes/com/epam/lab/hw_13_io_nio/
+target/classes/com/epam/lab/hw_14_xml/
+target/classes/com/epam/lab/hw_15_json/
+target/classes/com/epam/lab/hw_16_pattern/
+target/classes/com/epam/lab/hw_17_jdbc/
+target/classes/com/epam/lab/hw_3_oop_basics/Main.class
+target/classes/com/epam/lab/hw_5_exception/exceptionsTask2/Main.class
+target/classes/com/epam/lab/hw_7_8_collection/arrays/logical_task/
+target/classes/com/epam/lab/hw_9_collections_enum/console_menu/
+target/classes/com/epam/lab/hw_9_collections_enum/tree/
+target/generated-sources/
+/.idea/

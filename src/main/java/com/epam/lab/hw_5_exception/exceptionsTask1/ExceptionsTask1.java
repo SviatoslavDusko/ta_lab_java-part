@@ -19,6 +19,7 @@ public class ExceptionsTask1 {
             }
         } catch (IllegalArgumentException e) {
             System.out.println("Please, enter POSITIVE numbers(width and length)!");
+            e.printStackTrace();
             return scanAndCalculate();
         }
     }

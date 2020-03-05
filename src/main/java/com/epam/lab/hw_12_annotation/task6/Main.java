@@ -2,7 +2,6 @@ package com.epam.lab.hw_12_annotation.task6;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.lang.String;
 
 public class Main {
     public static void main(String[] args) {

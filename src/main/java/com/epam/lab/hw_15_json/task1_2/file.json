@@ -1,0 +1,16 @@
+{
+  "name": "Internet ta rozmovy",
+  "operator_name": "Kyivstar",
+  "payroll": "2000",
+  "call_prices": {
+    "on_network": "0",
+    "out_of_network": "100",
+    "stationary": "800"
+  },
+  "sms_prices": "600",
+  "parameters": {
+    "fav_number": "380985658553",
+    "tariffing": "60",
+    "connection_cost": "6000"
+  }
+}

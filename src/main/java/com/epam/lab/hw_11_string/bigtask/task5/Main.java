@@ -1,7 +1,6 @@
 package com.epam.lab.hw_11_string.bigtask.task5;
 
 import com.epam.lab.hw_11_string.bigtask.text.Sentence;
-import com.epam.lab.hw_11_string.bigtask.text.Symbol;
 import com.epam.lab.hw_11_string.bigtask.text.Text;
 
 public class Main {

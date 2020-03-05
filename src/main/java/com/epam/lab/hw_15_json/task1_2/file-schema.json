@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "operator_name": {
+      "type": "string"
+    },
+    "payroll": {
+      "type": "string"
+    },
+    "call_prices": {
+      "type": "object",
+      "properties": {
+        "on_network": {
+          "type": "string"
+        },
+        "out_of_network": {
+          "type": "string"
+        },
+        "stationary": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "on_network",
+        "out_of_network",
+        "stationary"
+      ]
+    },
+    "sms_prices": {
+      "type": "string"
+    },
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "fav_number": {
+          "type": "string"
+        },
+        "tariffing": {
+          "type": "string"
+        },
+        "connection_cost": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "fav_number",
+        "tariffing",
+        "connection_cost"
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "operator_name",
+    "payroll",
+    "call_prices",
+    "sms_prices",
+    "parameters"
+  ]
+}

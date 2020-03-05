@@ -38,8 +38,16 @@ public class Tank {
         return damage;
     }
 
+    public void setDamage(int damage) {
+        this.damage = damage;
+    }
+
     public int getEvasion() {
         return evasion;
+    }
+
+    public void setEvasion(int evasion) {
+        this.evasion = evasion;
     }
 
     private int getPenetration() {
@@ -96,14 +104,6 @@ public class Tank {
             }
             System.out.println(tank.getHealth() + " health left.");
         }
-    }
-
-    public void setDamage(int damage) {
-        this.damage = damage;
-    }
-
-    public void setEvasion(int evasion) {
-        this.evasion = evasion;
     }
 
     public String getName() {

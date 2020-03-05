@@ -3,7 +3,6 @@ package com.epam.lab.hw_11_string.bigtask.text;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -33,7 +32,7 @@ public class Text {
 
     private List<Sentence> textToListOfSentence() {
         List<Sentence> listOfSentence = new ArrayList<>();
-        for (String s : Arrays.asList(writeTextToString().split("(?<=[.!?])\\s*"))) {
+        for (String s : writeTextToString().split("(?<=[.!?])\\s*")) {
             listOfSentence.add(new Sentence(s));
         }
         return listOfSentence;

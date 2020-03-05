@@ -1,6 +1,7 @@
 package com.epam.lab.hw_6_logging.log;
 
-import org.apache.logging.log4j.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class View {
     private static final Logger logger1 = LogManager.getLogger(View.class);

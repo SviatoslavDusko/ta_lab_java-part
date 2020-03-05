@@ -1,5 +1,5 @@
 Configuration:
-  packages: "com.epam.lab.logger.log"
+  packages: "src/main/java/com/epam/lab"
   name: Log4j2_Config
   properties:
     property:
@@ -10,39 +10,38 @@ Configuration:
     Console:
       name: Console_Appender
       PatternLayout:
-        Pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} %class{1}:%L - %msg %xEx{short}%n"
+        #        Pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} %class{1}:%L : %msg %xEx{short}%n"
+        Pattern: "[%-5level]: %msg %xEx{short}%n"
       Filters:
         ThresholdFilter:
-          level: warn
-          onMatch: ACCEPT
-          onMismatch: DENY
-    File:
-      name: File_Appender
-      fileName: logs/root/rootFile.log
-      PatternLayout:
-        Pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} %class{1}:%L - %msg %xEx{short}%n"
-    RollingFile:
-      name: Rolling_File_Appender
-      fileName: logs/rolling/rollingFile.log
-      filePattern: logs/rolling/archive/rolFile1.log.%d{yyyy-MM-dd-hh-mm}.gz
-      PatternLayout:
-        Pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} %class{1}:%L - %msg %xEx{short}%n"
-      Filters:
-        ThresholdFilter:
-          level: warn
-          onMatch: NEUTRAL
-          onMismatch: DENY
-      CronTriggeringPolicy:
-        schedule: "0 29 12 * * ?"
-        evaluateOnStartup: true
-      DefaultRolloverStrategy:
-        max: 1
-      Policies:
-        TimeBasedTriggeringPolicy:
-          interval: 1
-          modulate: true
-        SizeBasedTriggeringPolicy:
-          size: 1 MB
+          level: all
+  #    File:
+  #      name: File_Appender
+  #      fileName: logs/root/rootFile.log
+  #      PatternLayout:
+  #        Pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} %class{1}:%L - %msg %xEx{short}%n"
+  #    RollingFile:
+  #      name: Rolling_File_Appender
+  #      fileName: logs/rolling/rollingFile.log
+  #      filePattern: logs/rolling/archive/rolFile1.log.%d{yyyy-MM-dd-hh-mm}.gz
+  #      PatternLayout:
+  #        Pattern: "[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} %class{1}:%L - %msg %xEx{short}%n"
+  #      Filters:
+  #        ThresholdFilter:
+  #          level: warn
+  #          onMatch: NEUTRAL
+  #          onMismatch: DENY
+  #      CronTriggeringPolicy:
+  #        schedule: "0 29 12 * * ?"
+  #        evaluateOnStartup: true
+  #      DefaultRolloverStrategy:
+  #        max: 1
+  #      Policies:
+  #        TimeBasedTriggeringPolicy:
+  #          interval: 1
+  #          modulate: true
+  #        SizeBasedTriggeringPolicy:
+  #          size: 1 MB
   #    SMTP:
   #  xxxxxxxxxxxxxxxxxxx
   #    SMS:
@@ -52,15 +51,15 @@ Configuration:
       level: info
       AppenderRef:
         - ref: Console_Appender
-        - ref: File_Appender
-        - ref: Rolling_File_Appender
+    #        - ref: File_Appender
+    #        - ref: Rolling_File_Appender
     Logger:
       - name: com.epam.lab.logger.Main
         level: all
         AppenderRef:
           - ref: Console_Appender
             level: all
-          - ref: File_Appender
-            level: all
-          - ref: Rolling_File_Appender
-            level: all
+#          - ref: File_Appender
+#            level: all
+#          - ref: Rolling_File_Appender
+#            level: all

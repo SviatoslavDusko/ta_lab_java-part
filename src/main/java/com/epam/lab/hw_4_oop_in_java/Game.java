@@ -100,35 +100,35 @@ public class Game {
         getAllTanks().add(new Jg_Pz_E100());
     }
 
-    private void setFirstPlayersName(String firstPlayersName) {
-        this.firstPlayersName = firstPlayersName;
-    }
-
-    private void setSecondPlayersName(String secondPlayersName) {
-        this.secondPlayersName = secondPlayersName;
-    }
-
-    private void setFirstPlayersTank(Tank firstPlayersTank) {
-        this.firstPlayersTank = firstPlayersTank;
-    }
-
-    private void setSecondPlayersTank(Tank secondPlayersTank) {
-        this.secondPlayersTank = secondPlayersTank;
-    }
-
     private String getFirstPlayersName() {
         return firstPlayersName;
+    }
+
+    private void setFirstPlayersName(String firstPlayersName) {
+        this.firstPlayersName = firstPlayersName;
     }
 
     private String getSecondPlayersName() {
         return secondPlayersName;
     }
 
+    private void setSecondPlayersName(String secondPlayersName) {
+        this.secondPlayersName = secondPlayersName;
+    }
+
     private Tank getFirstPlayersTank() {
         return firstPlayersTank;
     }
 
+    private void setFirstPlayersTank(Tank firstPlayersTank) {
+        this.firstPlayersTank = firstPlayersTank;
+    }
+
     private Tank getSecondPlayersTank() {
         return secondPlayersTank;
+    }
+
+    private void setSecondPlayersTank(Tank secondPlayersTank) {
+        this.secondPlayersTank = secondPlayersTank;
     }
 }

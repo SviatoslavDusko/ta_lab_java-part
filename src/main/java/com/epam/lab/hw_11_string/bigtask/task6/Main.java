@@ -4,7 +4,10 @@ import com.epam.lab.hw_11_string.bigtask.text.Sentence;
 import com.epam.lab.hw_11_string.bigtask.text.Symbol;
 import com.epam.lab.hw_11_string.bigtask.text.Text;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class Main {
     public static void main(String[] args) {

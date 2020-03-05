@@ -2,17 +2,12 @@ package com.epam.lab.hw_10_lambda.task3;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 public class Main {
     private List<Integer> integerList;
 
     public Main() {
         this.integerList = generateList();
-    }
-
-    public List<Integer> getIntegerList() {
-        return integerList;
     }
 
     public static void main(String[] args) {
@@ -25,6 +20,10 @@ public class Main {
         System.out.println("Min value :" + main.getMin());
         System.out.println("Sum :" + main.getSum());
         System.out.println("Count number of values that are bigger than average :" + main.countValuesBiggerThanAvg());
+    }
+
+    public List<Integer> getIntegerList() {
+        return integerList;
     }
 
     private List<Integer> generateList() {

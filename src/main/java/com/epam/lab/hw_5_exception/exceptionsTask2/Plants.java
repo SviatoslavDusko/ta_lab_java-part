@@ -7,8 +7,8 @@ import com.epam.lab.hw_5_exception.exceptionsTask2.enums.enum_exceptions.TypeExc
 
 public class Plants {
     private Color color;
-    private int size;
     private Type type;
+    private int size;
 
     public Plants(Color color, int size, Type type) throws ColorException, TypeException {
         this.color = verifyColor(color);

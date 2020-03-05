@@ -1,6 +1,7 @@
 package com.epam.lab.hw_7_8_collection.generics.priority_queue;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MyPriorityQueue<T> {
     private List<T> list = new ArrayList<>();

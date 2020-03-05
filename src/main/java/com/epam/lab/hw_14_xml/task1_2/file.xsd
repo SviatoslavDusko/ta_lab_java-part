@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="tariffs">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="name" type="xsd:string"/>
+                <xsd:element name="operator_name" type="xsd:string"/>
+                <xsd:element name="payroll" type="xsd:nonNegativeInteger"/>
+                <xsd:element name="call_prices" type="call_prices"/>
+                <xsd:element name="sms_prices" type="xsd:nonNegativeInteger"/>
+                <xsd:element name="parameters" type="parameters"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="call_prices">
+        <xsd:sequence>
+            <xsd:element name="on_network" type="xsd:nonNegativeInteger"/>
+            <xsd:element name="out_of_network" type="xsd:nonNegativeInteger"/>
+            <xsd:element name="stationary" type="xsd:nonNegativeInteger"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="parameters">
+        <xsd:sequence>
+            <xsd:element name="favorite_number" type="xsd:positiveInteger"/>
+            <xsd:element name="tariffing" type="xsd:positiveInteger"/>
+            <xsd:element name="connection_cost" type="xsd:nonNegativeInteger"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

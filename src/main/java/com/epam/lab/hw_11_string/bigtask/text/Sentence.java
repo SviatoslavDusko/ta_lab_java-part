@@ -1,7 +1,6 @@
 package com.epam.lab.hw_11_string.bigtask.text;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Sentence {
@@ -41,7 +40,7 @@ public class Sentence {
 
     private List<Symbol> sentenceToListOfSymbol(String sentence) {
         List<Symbol> listOfSymbol = new ArrayList<>();
-        for (String symbol : Arrays.asList(sentence.split("[ ]\\s*"))) {
+        for (String symbol : sentence.split("[ ]\\s*")) {
             listOfSymbol.add(new Symbol(symbol));
         }
         for (int i = 0; i < listOfSymbol.size(); i++) {
