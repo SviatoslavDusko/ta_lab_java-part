@@ -18,49 +18,49 @@ public class Application {
         listSentenceToListWord();
     }
 
-    public void start(){
+    public void start() {
         log.info(calculateUniqueWords());
         log.info(getSortedListOfUniqueWords());
         log.info(getMapWithCountOfEachWord());
         log.info(getMapWithCountOfEachLetter());
     }
 
-    private List<String> readTextFromConsole(){
+    private List<String> readTextFromConsole() {
         Scanner scan = new Scanner(System.in);
         List<String> list = new LinkedList<>();
         String line;
         do {
             line = scan.nextLine();
-            if (line.length()!=0) {
+            if (line.length() != 0) {
                 list.add(line);
             }
-        }while (line.length() != 0);
+        } while (line.length() != 0);
         return list;
     }
 
-    private void listSentenceToListWord(){
-        for (String sentence : sentencesList){
+    private void listSentenceToListWord() {
+        for (String sentence : sentencesList) {
             wordsList.addAll(Arrays.asList(sentence.split("\\s+")));
         }
     }
 
-    private int calculateUniqueWords(){
+    private int calculateUniqueWords() {
         return wordsList.stream().distinct().collect(Collectors.toList()).size();
     }
 
-    private List<String> getSortedListOfUniqueWords(){
+    private List<String> getSortedListOfUniqueWords() {
         return wordsList.stream().distinct().sorted().collect(Collectors.toList());
     }
 
-    private Map getMapWithCountOfEachWord(){
+    private Map getMapWithCountOfEachWord() {
         return wordsList.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
     }
 
-    private Map getMapWithCountOfEachLetter(){
+    private Map getMapWithCountOfEachLetter() {
         HashMap<Character, Integer> map = new HashMap<>();
-        for (String word : wordsList){
+        for (String word : wordsList) {
             for (char c : word.toLowerCase().toCharArray()) {
-                map.merge(c,1,Integer::sum);
+                map.merge(c, 1, Integer::sum);
             }
         }
         return map;
