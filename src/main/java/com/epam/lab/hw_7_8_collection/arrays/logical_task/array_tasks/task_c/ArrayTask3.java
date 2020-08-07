@@ -7,7 +7,6 @@ public class ArrayTask3 extends ArrayHW {
 
     public static void main(String[] args) {
         ArrayTask3 arrayTask3 = new ArrayTask3();
-//        arrayTask3.arr1 = new int[]{5,5,5,5,5,5,12,12,12,12,12,5,5,10,10,5,12};
         arrayTask3.go();
     }
 
