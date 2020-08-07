@@ -17,12 +17,12 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Game {
-    private Scanner scan = new Scanner(System.in);
+    private final Scanner scan = new Scanner(System.in);
     private String firstPlayersName;
     private String secondPlayersName;
     private Tank firstPlayersTank;
     private Tank secondPlayersTank;
-    private List<Tank> allTanks = new ArrayList<Tank>();
+    private final List<Tank> allTanks = new ArrayList<Tank>();
 
     private List<Tank> getAllTanks() {
         return allTanks;
