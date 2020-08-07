@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    private List<Integer> integerList;
+    private final List<Integer> integerList;
 
     public Main() {
         this.integerList = generateList();
