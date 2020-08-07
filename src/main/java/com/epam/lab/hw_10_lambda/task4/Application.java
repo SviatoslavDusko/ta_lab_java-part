@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 public class Application {
     private final static Logger log = LogManager.getLogger(Application.class);
     private final List<String> sentencesList;
-    private List<String> wordsList;
+    private final List<String> wordsList;
 
     public Application() {
         sentencesList = readTextFromConsole();
