@@ -3,9 +3,9 @@ package com.epam.lab.hw_17_jdbc.menu;
 import com.epam.lab.hw_17_jdbc.dao.impl.ClientDAOImpl;
 import com.epam.lab.hw_17_jdbc.menu.state.State;
 import com.epam.lab.hw_17_jdbc.menu.state.impl.signin.StartState;
+import com.epam.lab.hw_17_jdbc.model.ClientEntity;
 import com.epam.lab.hw_17_jdbc.model.FlatEntity;
 import com.epam.lab.hw_17_jdbc.model.OrderEntity;
-import com.epam.lab.hw_17_jdbc.model.ClientEntity;
 
 import java.sql.SQLException;
 

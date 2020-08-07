@@ -1,14 +1,12 @@
 package com.epam.lab.hw_17_jdbc.menu.state.impl.search;
 
-import com.epam.lab.hw_16_pattern.task2.Color;
 import com.epam.lab.hw_17_jdbc.menu.Menu;
 import com.epam.lab.hw_17_jdbc.menu.state.State;
+import com.epam.lab.hw_17_jdbc.menu.state.actions.search_actions.NotFoundActions;
 
 public class NotFoundState implements State {
     public NotFoundState(Menu menu) {
-        System.out.println(Color.BLUE);
-        System.out.println("   Found 0 flats, please enter other parameters.");
-        System.out.println(Color.RESET);
+        NotFoundActions.notFoundFlatAction();
         setCharacteristicsSearchingFlat(menu);
     }
 

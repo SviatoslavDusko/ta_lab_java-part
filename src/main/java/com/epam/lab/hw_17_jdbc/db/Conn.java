@@ -14,7 +14,7 @@ public class Conn {
     }
 
     public static Connection get() {
-        String connectionString = "jdbc:mysql://" + DB.HOST + ":" + DB.PORT + "/" + DB.NAME;
+        String connectionString = "jdbc:mysql://" + DB.HOST + ":" + DB.PORT + "/" + DB.NAME + DB.TIMEZONE;
 
         if (connection == null) {
             try {
