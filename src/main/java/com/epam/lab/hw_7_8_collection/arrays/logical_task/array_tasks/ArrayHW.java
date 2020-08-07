@@ -32,6 +32,7 @@ public class ArrayHW {
             for (int j = i + 1; j < arr.length; j++) {
                 if (arr[i] == arr[j] && arr[i] != 0) {
                     arr[i] = 0;
+                    break;
                 }
             }
         }
