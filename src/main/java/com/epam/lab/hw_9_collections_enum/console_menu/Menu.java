@@ -9,7 +9,7 @@ import java.util.TreeMap;
 public class Menu {
     private final static Logger log = LogManager.getLogger(Menu.class);
 
-    private Map<Integer, Cars> map;
+    private final Map<Integer, Cars> map;
 
     public Menu() {
         this.map = new TreeMap<>();
