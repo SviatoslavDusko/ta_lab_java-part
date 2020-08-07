@@ -1,8 +1,8 @@
 package com.epam.lab.hw_3_oop_basics;
 
 public class Goods {
-    private float price;
-    private String name;
+    private final float price;
+    private final String name;
 
     public Goods(float price, String name) {
         this.price = price;
